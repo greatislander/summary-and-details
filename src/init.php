@@ -26,7 +26,7 @@ function summary_and_details_block_editor_assets() {
 		'bight/summary-and-details-block-js',
 		plugins_url( '/dist/blocks.build.js', dirname( __FILE__ ) ),
 		[ 'wp-blocks', 'wp-i18n', 'wp-element' ],
-		filemtime( plugin_dir_path( __FILE__ ) . 'block.js' )
+		SUMMARY_AND_DETAILS_VERSION
 	);
 
 	// Styles.
@@ -34,7 +34,7 @@ function summary_and_details_block_editor_assets() {
 		'bight/summary-and-details-block-editor-js',
 		plugins_url( 'dist/blocks.editor.build.css', dirname( __FILE__ ) ),
 		[ 'wp-edit-blocks' ],
-		filemtime( plugin_dir_path( __FILE__ ) . 'editor.css' )
+		SUMMARY_AND_DETAILS_VERSION
 	);
 }
 

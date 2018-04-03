@@ -18,6 +18,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
+ * Plugin version, for cache busting assets.
+ */
+define( 'SUMMARY_AND_DETAILS_VERSION', '1.0.0' );
+
+/**
  * Initialize blocks.
  */
 require_once plugin_dir_path( __FILE__ ) . 'src/init.php';
