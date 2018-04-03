@@ -7,7 +7,7 @@
  * Author URI: https://bight.ca/
  * Version: 1.0.0
  * License: GPL v3 or later
- * License URI: http://www.gnu.org/licenses/gpl-3.0.txt
+ * License URI: http://www.gnu.org/licenses/gpl-3.0.html
  *
  * @package Summary_and_Details
  */
