@@ -1,4 +1,4 @@
-# Summary and Details
+# Summary & Details
 
 This plugin adds a Gutenberg block which provides `<details>` with an optional `<summary>`.
 
