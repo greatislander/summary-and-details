@@ -9,7 +9,7 @@ Why, just like this!
 
 <details>
 <summary>Why did you make it?</summary>
-I wanted to try making a Gutenberg block, and I read [this article](https://css-tricks.com/quick-reminder-that-details-summary-is-the-easiest-way-ever-to-make-an-accordion/) last week.
+I wanted to try making a Gutenberg block, and I read <a href="https://css-tricks.com/quick-reminder-that-details-summary-is-the-easiest-way-ever-to-make-an-accordion/">this article</a> last week.
 </details>
 
 ***
