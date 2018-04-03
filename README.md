@@ -12,6 +12,10 @@ Why, just like this!
 I wanted to try making a Gutenberg block, and I read <a href="https://css-tricks.com/quick-reminder-that-details-summary-is-the-easiest-way-ever-to-make-an-accordion/">this article</a> last week.
 </details>
 
+## Meta
+
+![A screenshot.](screenshot-1.png)
+
 ***
 
 _This project was bootstrapped with [Create Guten Block](https://github.com/ahmadawais/create-guten-block)._
