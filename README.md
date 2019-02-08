@@ -14,7 +14,7 @@ I wanted to try making a Gutenberg block, and I read <a href="https://css-tricks
 
 ## Meta
 
-![A screenshot.](screenshot-1.png)
+![A screenshot.](assets/dotorg/screenshot-1.png)
 
 ***
 

@@ -11,6 +11,8 @@
 		}
 	}
 
+	.details { display: none; }
+
 	.is-selected &,
 	.is-typing & {
 		.summary {
@@ -18,5 +20,7 @@
 				content: "\25bc\a0";
 			}
 		}
+
+		.details { display: block; }
 	}
 }

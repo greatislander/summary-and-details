@@ -2,8 +2,8 @@
 Contributors: greatislander
 Donate link: https://www.paypal.me/greatislander
 Tags: details, summary, gutenberg
-Requires at least: 4.9
-Tested up to: 4.9.4
+Requires at least: 5.0.0
+Tested up to: 5.0.3
 Stable tag: trunk
 Requires PHP: 7.0
 License: GPLv3 or later
@@ -44,14 +44,17 @@ Just about all of them except IE and Edge. See [here](https://caniuse.com/#feat=
 
 == Screenshots ==
 
-1. Adding some details in Gutenberg 2.5.
+1. Adding some details in WordPress 5.0.3.
 
 == Changelog ==
+
+= 1.1.0 =
+* Support for WordPress 5.0.
 
 = 1.0.0 =
 * Initial release.
 
 == Upgrade Notice ==
 
-= 1.0.0 =
-You need [Gutenberg](https://wordpress.org/plugins/gutenberg) for this.
+= 1.1.0 =
+You need [WordPress 5.0](https://wordpress.org/download) for this.

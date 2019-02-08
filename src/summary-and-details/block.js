@@ -8,7 +8,8 @@ import { map } from 'lodash';
 import './editor.scss';
 
 const { __ } = wp.i18n;
-const { registerBlockType, RichText } = wp.blocks;
+const { registerBlockType } = wp.blocks;
+const { RichText } = wp.editor;
 const toRichTextValue = value => map( value, subValue => subValue.children );
 const fromRichTextValue = value =>
 	map( value, subValue => ( {
@@ -40,8 +41,6 @@ registerBlockType( 'bight/summary-and-details', {
 
 	edit: function( props ) {
 		const { details, summary } = props.attributes;
-		const focus = props.focus;
-		const isSelected = props.isSelected;
 
 		function onChangeSummary( newSummary ) {
 			props.setAttributes( { summary: newSummary } );
@@ -54,25 +53,20 @@ registerBlockType( 'bight/summary-and-details', {
 		return (
 			<div className={ props.className }>
 				<RichText
-					tagName="p"
 					placeholder={ __( 'Details' ) }
+					tagName="p"
 					className="summary"
 					value={ summary }
-					focus={ focus }
 					onChange={ onChangeSummary }
-					isSelected={ isSelected }
-					onFocus={ props.setFocus }
 				/>
 
-				{ isSelected && (
-					<RichText
-						multiline="p"
-						value={ toRichTextValue( details ) }
-						onChange={ onChangeDetails }
-						placeholder={ __( 'Detail text goes here.' ) }
-						onFocus={ props.setFocus }
-					/>
-				) }
+				<RichText
+					className="details"
+					multiline="p"
+					value={ toRichTextValue( details ) }
+					onChange={ onChangeDetails }
+					placeholder={ __( 'Detail text goes here.' ) }
+				/>
 			</div>
 		);
 	},

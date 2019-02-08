@@ -5,7 +5,7 @@
  * Description: A Gutenberg block plugin which adds <details> with an optional <summary>.
  * Author: greatislander
  * Author URI: https://bight.ca/
- * Version: 1.0.0
+ * Version: 1.1.0
  * License: GPL v3 or later
  * License URI: http://www.gnu.org/licenses/gpl-3.0.html
  *
@@ -20,7 +20,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Plugin version, for cache busting assets.
  */
-define( 'SUMMARY_AND_DETAILS_VERSION', '1.0.0' );
+define( 'SUMMARY_AND_DETAILS_VERSION', '1.1.0' );
 
 /**
  * Initialize blocks.

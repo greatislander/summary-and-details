@@ -25,7 +25,7 @@ function summary_and_details_block_editor_assets() {
 	wp_enqueue_script(
 		'bight/summary-and-details-block-js',
 		plugins_url( '/dist/blocks.build.js', dirname( __FILE__ ) ),
-		[ 'wp-blocks', 'wp-i18n', 'wp-element' ],
+		[ 'wp-blocks', 'wp-i18n', 'wp-editor' ],
 		SUMMARY_AND_DETAILS_VERSION
 	);
 
