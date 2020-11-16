@@ -21,7 +21,7 @@ jobs:
         textdomain: 'summary-and-details'
         name: 'summary-and-details'
         headers: "{\"Report-Msgid-Bugs-To\":\"https://github.com/greatislander/summary-and-details/issues\"}"
-        excludes: "node_modules"
+        excludes: "dist,node_modules"
     - name: Commit updated POT file
       uses: stefanzweifel/git-auto-commit-action@v4.1.1
       with:
