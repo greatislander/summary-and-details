@@ -1,0 +1,28 @@
+name: Update POT file
+
+on:
+  push:
+    branches:
+    - dev
+    paths:
+    - '**.php'
+    - '**.js'
+
+jobs:
+  update-pot:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Update POT file
+      uses: platform-coop-toolkit/action-wp-pot-generator@master
+      with:
+        path: './languages'
+        slug: 'summary-and-details'
+        textdomain: 'summary-and-details'
+        name: 'summary-and-details'
+        headers: "{\"Report-Msgid-Bugs-To\":\"https://github.com/greatislander/summary-and-details/issues\"}"
+        excludes: "node_modules"
+    - name: Commit updated POT file
+      uses: stefanzweifel/git-auto-commit-action@v4.1.1
+      with:
+        commit_message: 'chore: update languages/summary-and-details.pot'
