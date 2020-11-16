@@ -17,10 +17,10 @@ const fromRichTextValue = value =>
 	} ) );
 
 registerBlockType( 'bight/summary-and-details', {
-	title: __( 'Summary & Details' ),
+	title: __( 'Summary & Details', 'summary-and-details' ),
 	icon: 'excerpt-view',
 	category: 'common',
-	keywords: [ __( 'details' ), __( 'summary' ) ],
+	keywords: [ __( 'details', 'summary-and-details' ), __( 'summary', 'summary-and-details' ) ],
 	attributes: {
 		details: {
 			type: 'array',
@@ -53,7 +53,7 @@ registerBlockType( 'bight/summary-and-details', {
 		return (
 			<div className={ props.className }>
 				<RichText
-					placeholder={ __( 'Details' ) }
+					placeholder={ __( 'Details', 'summary-and-details' ) }
 					tagName="p"
 					className="summary"
 					value={ summary }
@@ -65,7 +65,7 @@ registerBlockType( 'bight/summary-and-details', {
 					multiline="p"
 					value={ toRichTextValue( details ) }
 					onChange={ onChangeDetails }
-					placeholder={ __( 'Detail text goes here.' ) }
+					placeholder={ __( 'Detail text goes here.', 'summary-and-details' ) }
 				/>
 			</div>
 		);

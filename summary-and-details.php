@@ -8,6 +8,7 @@
  * Version: 1.1.0
  * License: GPL v3 or later
  * License URI: http://www.gnu.org/licenses/gpl-3.0.html
+ * Textdomain: summary-and-details
  *
  * @package Summary_and_Details
  */
